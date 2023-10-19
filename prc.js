@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 function getComputerChoice()
 {
     const prc = ["Rock", "Paper", "Scissors"];
@@ -5,5 +7,11 @@ function getComputerChoice()
     return prc[random];
 }
 
+//check computer choice
 console.log(getComputerChoice());
 
+let playerPrompt = prompt ("Paper, Rock, or Scissors? ");
+let playerSelection = playerPrompt.toLowerCase();
+
+//check if player selection works
+console.log(playerSelection);
